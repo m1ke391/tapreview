@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TapReview | Placas NFC para Google Reviews</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%); }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.12); }
+    html { scroll-behavior: smooth; }
+    section { scroll-margin-top: 100px; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- Header -->
+  <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="flex items-center gap-2">
+        <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">T</div>
+        <span class="text-2xl font-bold tracking-tight">Tap<span class="text-blue-600">Review</span></span>
+      </a>
+      <nav class="hidden md:flex gap-8 font-medium">
+        <a href="#produto" class="hover:text-blue-600">Produto</a>
+        <a href="#precos" class="hover:text-blue-600">Preços</a>
+        <a href="#empresas" class="hover:text-blue-600">Empresas</a>
+        <a href="#contacto" class="hover:text-blue-600">Contacto</a>
+      </nav>
+      <a href="#precos" class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition">Comprar Agora</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="gradient-bg text-white pt-32 pb-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="inline-block bg-blue-500/20 text-blue-300 px-4 py-1 rounded-full text-sm font-medium mb-6">Mais reviews em segundos</div>
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">Mais avaliações 5★ no Google com um simples toque</h1>
+        <p class="text-xl text-slate-300 mb-8">As placas NFC TapReview fazem com que os seus clientes deixem reviews no Google em segundos. Sem apps, sem complicações. Só toque e avalie.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#precos" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg text-center transition">Ver Planos</a>
+          <a href="#como-funciona" class="border border-white/30 hover:bg-white/10 px-8 py-4 rounded-full font-semibold text-lg text-center transition">Como Funciona</a>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80" alt="Placa NFC TapReview" class="rounded-3xl shadow-2xl border border-white/10">
+      </div>
+    </div>
+  </section>
+
+  <!-- Como Funciona -->
+  <section id="como-funciona" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Como funciona</h2>
+        <p class="text-xl text-slate-600">Três passos simples. Sem apps para instalar.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center p-8 rounded-3xl bg-slate-50 card-hover">
+          <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6"><i class="fas fa-mobile-alt"></i></div>
+          <h3 class="text-2xl font-bold mb-3">1. O cliente toca</h3>
+          <p class="text-slate-600">Encosta o telemóvel na placa NFC. Funciona com iPhone e Android.</p>
+        </div>
+        <div class="text-center p-8 rounded-3xl bg-slate-50 card-hover">
+          <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6"><i class="fab fa-google"></i></div>
+          <h3 class="text-2xl font-bold mb-3">2. Abre o Google</h3>
+          <p class="text-slate-600">A página de avaliação do seu negócio abre automaticamente.</p>
+        </div>
+        <div class="text-center p-8 rounded-3xl bg-slate-50 card-hover">
+          <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6"><i class="fas fa-star"></i></div>
+          <h3 class="text-2xl font-bold mb-3">3. Deixa a review</h3>
+          <p class="text-slate-600">O cliente avalia em segundos. Mais 5 estrelas para o seu negócio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produto -->
+  <section id="produto" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-4xl font-bold mb-6">A Placa NFC TapReview</h2>
+        <p class="text-xl text-slate-600 mb-6">Uma placa em acrílico de alta qualidade com chip NFC e QR Code. Os seus clientes tocam com o telemóvel e são levados diretamente à página de avaliação do Google do seu negócio.</p>
+        <ul class="space-y-3 text-lg">
+          <li><i class="fas fa-check text-green-500 mr-3"></i> Acrílico resistente e elegante</li>
+          <li><i class="fas fa-check text-green-500 mr-3"></i> Chip NFC de alta qualidade</li>
+          <li><i class="fas fa-check text-green-500 mr-3"></i> QR Code de backup</li>
+          <li><i class="fas fa-check text-green-500 mr-3"></i> Design profissional padrão</li>
+          <li><i class="fas fa-check text-green-500 mr-3"></i> Funciona com iPhone e Android</li>
+        </ul>
+      </div>
+      <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80" alt="Produto" class="rounded-3xl shadow-xl">
+    </div>
+  </section>
+
+  <!-- Preços -->
+  <section id="precos" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Escolha o seu plano</h2>
+        <p class="text-xl text-slate-600">Para particulares e para empresas</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="border-2 border-slate-200 rounded-3xl p-8 card-hover">
+          <h3 class="text-2xl font-bold mb-2">Essencial</h3>
+          <p class="text-slate-500 mb-6">1 placa NFC</p>
+          <div class="text-5xl font-bold mb-6">29€</div>
+          <ul class="space-y-3 mb-8 text-slate-600">
+            <li><i class="fas fa-check text-green-500 mr-2"></i> 1 placa NFC</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i> NFC + QR Code</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i> Design profissional</li>
+          </ul>
+          <a href="https://whop.com/checkout/plan_ESSENCIAL" target="_blank" class="block text-center bg-slate-900 text-white py-4 rounded-full font-semibold hover:bg-slate-800">Comprar</a>
+        </div>
+        <div class="border-2 border-blue-600 rounded-3xl p-8 relative card-hover bg-blue-50">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold">Mais Popular</div>
+          <h3 class="text-2xl font-bold mb-2">Balcão</h3>
+          <p class="text-slate-500 mb-6">Pack para o seu negócio</p>
+          <div class="text-5xl font-bold mb-6">69€</div>
+          <ul class="space-y-3 mb-8 text-slate-600">
+            <li><i class="fas fa-check text-green-500 mr-2"></i> 3 placas NFC</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i> NFC + QR Code</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i> Suporte prioritário</li>
+          </ul>
+          <a href="https://whop.com/checkout/plan_BALCAO" target="_blank" class="block text-center bg-blue-600 text-white py-4 rounded-full font-semibold hover:bg-blue-700">Comprar</a>
+        </div>
+        <div class="border-2 border-slate-200 rounded-3xl p-8 card-hover">
+          <h3 class="text-2xl font-bold mb-2">Rede</h3>
+          <p class="text-slate-500 mb-6">Para múltiplas lojas</p>
+          <div class="text-5xl font-bold mb-6">Sob consulta</div>
+          <ul class="space-y-3 mb-8 text-slate-600">
+            <li><i class="fas fa-check text-green-500 mr-2"></i> Volumes grandes</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i> Descontos por quantidade</li>
+            <li><i class="fas fa-check text-green-500 mr-2"></i> Suporte dedicado</li>
+          </ul>
+          <a href="#empresas" class="block text-center bg-slate-900 text-white py-4 rounded-full font-semibold hover:bg-slate-800">Pedir Orçamento</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Empresas -->
+  <section id="empresas" class="py-20 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-4xl font-bold mb-6">Soluções para empresas e franchises</h2>
+        <p class="text-xl text-slate-300 mb-8">Precisa de várias placas para diferentes localizações? Oferecemos preços especiais para volumes e suporte dedicado.</p>
+        <ul class="space-y-4 text-lg">
+          <li><i class="fas fa-check-circle text-blue-400 mr-3"></i> Descontos a partir de 10 unidades</li>
+          <li><i class="fas fa-check-circle text-blue-400 mr-3"></i> Ideal para restaurantes, clínicas, salões e retalho</li>
+          <li><i class="fas fa-check-circle text-blue-400 mr-3"></i> Entrega para múltiplas localizações</li>
+        </ul>
+      </div>
+      <div class="bg-white/10 backdrop-blur p-8 rounded-3xl">
+        <h3 class="text-2xl font-bold mb-6">Pedir orçamento B2B</h3>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
+          <input type="text" placeholder="Nome da empresa" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 focus:outline-none focus:border-blue-400 text-white">
+          <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 focus:outline-none focus:border-blue-400 text-white">
+          <input type="number" placeholder="Quantidade aproximada" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 focus:outline-none focus:border-blue-400 text-white">
+          <textarea placeholder="Mensagem" rows="4" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 focus:outline-none focus:border-blue-400 text-white"></textarea>
+          <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 py-4 rounded-xl font-semibold text-lg">Enviar Pedido</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Perguntas Frequentes</h2>
+      <div class="space-y-4">
+        <details class="border border-slate-200 rounded-2xl p-6">
+          <summary class="font-semibold text-lg cursor-pointer">Funciona com iPhone?</summary>
+          <p class="mt-3 text-slate-600">Sim. Funciona com iPhone XS e superiores e com a maioria dos Android recentes. Também inclui QR Code para todos os outros telemóveis.</p>
+        </details>
+        <details class="border border-slate-200 rounded-2xl p-6">
+          <summary class="font-semibold text-lg cursor-pointer">Preciso de app?</summary>
+          <p class="mt-3 text-slate-600">Não. O cliente só precisa de encostar o telemóvel. Não é necessário instalar nenhuma aplicação.</p>
+        </details>
+        <details class="border border-slate-200 rounded-2xl p-6">
+          <summary class="font-semibold text-lg cursor-pointer">Fazem personalização?</summary>
+          <p class="mt-3 text-slate-600">Não. Trabalhamos apenas com o design padrão profissional. Não fazemos personalizações.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-20 bg-slate-50">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4">Contacto</h2>
+        <p class="text-xl text-slate-600">Tem alguma dúvida? Fale connosco.</p>
+      </div>
+      <div class="bg-white p-8 rounded-3xl shadow-lg">
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+          <input type="text" placeholder="Nome" class="w-full px-4 py-3 border rounded-xl focus:outline-none focus:border-blue-500">
+          <input type="email" placeholder="Email" class="w-full px-4 py-3 border rounded-xl focus:outline-none focus:border-blue-500">
+          <textarea placeholder="Mensagem" rows="5" class="w-full px-4 py-3 border rounded-xl focus:outline-none focus:border-blue-500"></textarea>
+          <button class="w-full bg-blue-600 text-white py-4 rounded-xl font-semibold text-lg hover:bg-blue-700">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-12">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <div class="text-2xl font-bold text-white mb-4">TapReview</div>
+      <p class="mb-6">Placas NFC para mais reviews no Google.</p>
+      <p>© 2026 TapReview. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
